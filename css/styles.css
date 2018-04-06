@@ -40,7 +40,7 @@ h1 {
 
 .vertical-center {
     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
+    min-height: 100vh; 
     display: flex;
     align-items: center;
     background: url('../assets/images/pexels-photo-911738.jpeg');

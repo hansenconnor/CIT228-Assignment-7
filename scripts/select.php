@@ -182,7 +182,7 @@ mysqli_close($mysqli);
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Records</title>
+<title>Select Record</title>
 <link href="../css/styles.css" type="text/css" rel="stylesheet" />
 <?php include '../includes/externalHead.html'; ?>
 </head>
