@@ -108,10 +108,19 @@ include '../includes/connect.php';
 <!DOCTYPE html>
 <html>
 <head>
-<title>Address Update</title>
-<link href="greens.css" type="text/css" rel="stylesheet" />
+<title>Entry Updated</title>
+<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+<?php include '../includes/externalHead.html'; ?>
 </head>
 <body>
-<?php echo $display_block; ?>
+	<section class="vertical-center">
+		<div class="container">
+			<div class="row menu-row">
+				<div class="col-md-6 offset-md-3">
+					<?php echo $display_block; ?>    
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

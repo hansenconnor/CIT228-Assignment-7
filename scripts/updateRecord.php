@@ -298,7 +298,7 @@ END_OF_BLOCK;
 	mysqli_free_result($get_notes_res);
 
 	$display_block .= "<p style=\"text-align: center\"><button type='submit' name='submitChange' id='submitChange' value='submitChange'>Change Entry</button>";
-	$display_block .= "&nbsp;&nbsp;&nbsp;&nbsp;<a href='addressBookMenu.html' style='color:darkgreen';>Cancel and return to main menu</a></p></form>";
+	$display_block .= "&nbsp;&nbsp;&nbsp;&nbsp;<a href='../index.html' style='color:darkgreen';>Cancel and return to main menu</a></p></form>";
 }
 //close connection to MySQL
 mysqli_close($mysqli);
@@ -307,10 +307,19 @@ mysqli_close($mysqli);
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Records</title>
-<link href="greens.css" type="text/css" rel="stylesheet" />
+<title>Update Record</title>
+<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+<?php include '../includes/externalHead.html'; ?>
 </head>
 <body>
-<?php echo $display_block; ?>
+	<section class="vertical-center">
+		<div class="container">
+			<div class="row menu-row">
+				<div class="col-md-6 offset-md-3">
+					<?php echo $display_block; ?>    
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

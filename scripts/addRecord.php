@@ -10,20 +10,22 @@ if (!$_POST) {
 	<legend>First/Last Names:</legend><br/>
 	<input type="text" name="f_name" size="20" maxlength="75" required="required" />
 	<input type="text" name="l_name" size="30" maxlength="75" required="required" />
-	</fieldset>
 
 	<p><label for="address">Street Address:</label><br/>
 	<input type="text" id="address" name="address" size="30" /></p>
+	</fieldset>
+
+	
 
 	<fieldset>
-	<legend>City/State/Zip:</legend><br/>
+	<legend>City/State/Zip:</legend>
 	<input type="text" name="city" size="30" maxlength="50" />
 	<input type="text" name="state" size="5" maxlength="2" />
 	<input type="text" name="zipcode" size="10" maxlength="10" />
 	</fieldset>
 
 	<fieldset>
-	<legend>Address Type:</legend><br/>
+	<legend>Address Type:</legend>
 	<input type="radio" id="add_type_h" name="add_type" value="home" checked />
 	    <label for="add_type_h">home</label>
 	<input type="radio" id="add_type_w" name="add_type" value="work" />
@@ -33,7 +35,7 @@ if (!$_POST) {
 	</fieldset>
 
 	<fieldset>
-	<legend>Telephone Number:</legend><br/>
+	<legend>Telephone Number:</legend>
 	<input type="text" name="tel_number" size="30" maxlength="25" />
 	<input type="radio" id="tel_type_h" name="tel_type" value="home" checked />
 	    <label for="tel_type_h">home</label>
@@ -44,7 +46,7 @@ if (!$_POST) {
 	</fieldset>
 
 	<fieldset>
-	<legend>Fax Number:</legend><br/>
+	<legend>Fax Number:</legend>
 	<input type="text" name="fax_number" size="30" maxlength="25" />
 	<input type="radio" id="fax_type_h" name="fax_type" value="home" checked />
 	    <label for="fax_type_h">home</label>
@@ -55,7 +57,7 @@ if (!$_POST) {
 	</fieldset>
 
 	<fieldset>
-	<legend>Email Address:</legend><br/>
+	<legend>Email Address:</legend>
 	<input type="email" name="email" size="30" maxlength="150" />
 	<input type="radio" id="email_type_h" name="email_type" value="home" checked />
 	    <label for="email_type_h">home</label>
@@ -148,11 +150,19 @@ END_OF_BLOCK;
 <!DOCTYPE html>
 <html>
 <head>
-<title>Add an Entry</title>
-<link href="greens.css" type="text/css" rel="stylesheet" />
+<title>Add Record</title>
+<link href="../css/styles.css" type="text/css" rel="stylesheet" />
+<?php include '../includes/externalHead.html'; ?>
 </head>
 <body>
-<h1>Add an Entry</h1>
-<?php echo $display_block; ?>
+	<section class="vertical-center">
+		<div class="container">
+			<div class="row menu-row">
+				<div class="col-md-6 offset-md-3">
+					<?php echo $display_block; ?>    
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
